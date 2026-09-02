@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmara Modüler Depo | Paslanmaz ve Modüler Su Deposu Çözümleri</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0284c7',
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Eski Yazılı ve İkonlu Logo Bölümüne Geri Dönüldü -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="https://i.hizliresim.com/oo653sun.jpg" alt="Marmara Modüler Depo Amblem" class="h-12 w-auto object-contain drop-shadow-sm">
+                <!-- Logo Metni -->
+                <span class="text-xl font-bold text-dark tracking-tight">MARMARA <span class="text-primary font-medium">MODÜLER SU DEPOLAMA</span><span class="text-xl font-bold text-dark tracking-tight"></span> SİSTEMLERİ</span></span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                <a href="#anasayfa" class="hover:text-primary transition">Ana Sayfa</a>
+                <a href="#hakkimizda" class="hover:text-primary transition">Hakkımızda</a>
+                <a href="#urunler" class="hover:text-primary transition">Ürünlerimiz</a>
+                <a href="#avantajlar" class="hover:text-primary transition">Neden Biz?</a>
+                <a href="#iletisim" class="bg-primary text-white px-5 py-2.5 rounded-lg shadow-sm hover:bg-sky-700 transition">Teklif Al</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero / Giriş Bölümü (Slider) -->
+    <section id="anasayfa" class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-br from-slate-900 via-slate-800 to-sky-950 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+            
+            <div class="md:w-1/2 space-y-6">
+                <span class="inline-block bg-primary/20 text-sky-300 px-3 py-1 rounded-full text-sm font-semibold border border-sky-400/30">
+                    Endüstriyel & Bireysel Depolama Çözümleri
+                </span>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                    Yüksek Dayanımlı <span class="text-primary">Modüler Su Depoları</span>
+                </h1>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    Marmara Modüler Depo; paslanmaz çelik, galvaniz ve GRP modüler su depolarında hijyenik, uzun ömürlü ve kolay monte edilebilir profesyonel çözümler sunar.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#iletisim" class="bg-primary hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition duration-200">
+                        Fiyat Teklifi İsteyin
+                    </a>
+                    <a href="#urunler" class="border border-gray-500 hover:border-white text-gray-200 hover:text-white px-6 py-3 rounded-lg transition duration-200">
+                        Ürünleri İncele
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sağ: Slider Alanı -->
+            <div class="md:w-1/2 flex justify-center w-full">
+                <div class="relative w-full max-w-md">
+                    <div class="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl border-2 border-sky-400/30 bg-slate-950">
+                        
+                        <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+                            <img src="https://i.hizliresim.com/6r3bchsk.jpg" 
+                                 onerror="this.src='./galvaniz.jfif'" 
+                                 alt="Galvaniz Modüler Depo" 
+                                 class="w-full h-full object-cover object-center">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-5">
+                                <span class="text-xs bg-sky-500/80 text-white px-2 py-0.5 rounded font-semibold">Dış Mekan Kurulumu</span>
+                                <h4 class="text-white font-bold text-base mt-1">Yüksek Mukavemetli Modüler Depo</h4>
+                            </div>
+                        </div>
+
+                        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="https://i.hizliresim.com/4cdiwzh6.jpg" 
+                                 onerror="this.src='./paslanmaz.avif'" 
+                                 alt="Paslanmaz Çelik Depo" 
+                                 class="w-full h-full object-cover object-center">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-5">
+                                <span class="text-xs bg-sky-500/80 text-white px-2 py-0.5 rounded font-semibold">İç Mekan & Kazan Dairesi</span>
+                                <h4 class="text-white font-bold text-base mt-1">Dar Alanlara Özel Yerinde Montaj</h4>
+                            </div>
+                        </div>
+
+                        <div class="absolute top-4 right-4 z-20 flex gap-2">
+                            <button onclick="goToSlide(0)" class="dot w-3 h-3 rounded-full bg-white transition-all duration-300"></button>
+                            <button onclick="goToSlide(1)" class="dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300"></button>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900/95 border border-sky-400/30 backdrop-blur-md px-4 py-3 rounded-xl shadow-lg flex items-center gap-3 z-30">
+                        <i class="fa-solid fa-shield-halved text-sky-400 text-2xl"></i>
+                        <div>
+                            <p class="text-xs text-gray-400 font-medium">Kalite Standartı</p>
+                            <p class="text-sm font-bold text-white">Yerinde Hızlı Montaj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Avantajlar -->
+    <section id="avantajlar" class="py-16 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <i class="fa-solid fa-wrench text-primary text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg">Kolay Montaj</h4>
+                    <p class="text-gray-600 text-sm mt-1">Dar alanlardan geçerek yerinde hızlı kurulum.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-droplet text-primary text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg">%100 Hijyenik</h4>
+                    <p class="text-gray-600 text-sm mt-1">Bakteri ve yosun üretmeyen iç yüzey yapısı.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-award text-primary text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg">Uzun Ömürlü</h4>
+                    <p class="text-gray-600 text-sm mt-1">AISI 304 / 316 kalite paslanmaz çelik malzeme.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-headset text-primary text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg">Teknik Destek</h4>
+                    <p class="text-gray-600 text-sm mt-1">Satış sonrası periyodik bakım ve servis desteği.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ürünler Bölümü -->
+    <section id="urunler" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-dark">Modüler Ürün Seçeneklerimiz</h2>
+                <p class="text-gray-600 mt-3">Kullanım alanınıza ve bütçenize en uygun modüler depolama sistemleri.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Ürün 1: Paslanmaz -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-lg transition">
+                    <div class="h-56 overflow-hidden bg-gray-100">
+                        <img src="https://i.hizliresim.com/egmpsbxm.jpg" alt="Paslanmaz Çelik Modüler Depo" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Paslanmaz Çelik Depolar</h3>
+                            <p class="text-gray-600 text-sm mb-4">İçme suyu ve gıda sanayisi için AISI 304 veya 316 kalite paslanmaz saçtan üretilen en hijyenik çözüm.</p>
+                            <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                                <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Paslanmaz garanti</li>
+                                <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Kaynak gerektirmeyen montaj</li>
+                            </ul>
+                        </div>
+                        <a href="#iletisim" class="block text-center w-full py-2.5 bg-slate-100 hover:bg-primary hover:text-white text-dark font-medium rounded-lg transition duration-150">Bilgi Al</a>
+                    </div>
+                </div>
+
+                <!-- Ürün 2: Galvaniz -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-lg transition">
+                    <div class="h-56 overflow-hidden bg-gray-100">
+                        <img src="https://i.hizliresim.com/w3cl0acr.jpg" alt="Galvaniz Modüler Su Deposu" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">Galvaniz Modüler Depolar</h3>
+                            <p class="text-gray-600 text-sm mb-4">Yangın suyu rezervleri, sulama ve sanayi tesisleri için ekonomik ve yüksek mukavemetli modüler depolar.</p>
+                            <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                                <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Yüksek korozyon direnci</li>
+                                <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Ekonomik maliyet</li>
+                            </ul>
+                        </div>
+                        <a href="#iletisim" class="block text-center w-full py-2.5 bg-slate-100 hover:bg-primary hover:text-white text-dark font-medium rounded-lg transition duration-150">Bilgi Al</a>
+                    </div>
+                </div>
+
+                <!-- Ürün 3: GRP Kompozit -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-lg transition">
+                    <div class="h-56 overflow-hidden bg-gray-100">
+                        <img src="https://i.hizliresim.com/60yez4id.jpg" alt="GRP Kompozit Su Deposu" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark mb-2">GRP Kompozit Depolar</h3>
+                            <p class="text-gray-600 text-sm mb-4">Cam elyaf takviyeli polyesterden üretilen, kimyasal dayanımı yüksek ve zorlu iklim koşullarına uygun sistemler.</p>
+                            <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                                <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Hafif ve ekstra dayanıklı</li>
+                                <li><i class="fa-solid fa-check text-green-500 mr-2"></i>UV ışınlarına dirençli</li>
+                            </ul>
+                        </div>
+                        <a href="#iletisim" class="block text-center w-full py-2.5 bg-slate-100 hover:bg-primary hover:text-white text-dark font-medium rounded-lg transition duration-150">Bilgi Al</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda Bölümü -->
+    <section id="hakkimizda" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="bg-slate-100 rounded-2xl p-8 border border-slate-200">
+                        <h3 class="text-2xl font-bold text-dark mb-4">Marmara Bölgesi ve Tüm Türkiye'ye Güvenli Sevkiyat</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Marmara Modüler Depo, depolama ihtiyaçlarınıza özel ölçülendirme yaparak, fabrika ortamında üretilen modüler panelleri doğrudan adresinizde birleştirir.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Binaların bodrum katları, kazan daireleri veya açık alanlar gibi dar geçişli mekanlara parça parça taşınarak kaynak kullanılmadan cıvatalarla monte edilir.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <h2 class="text-3xl font-extrabold text-dark">Neden Modüler Sistem?</h2>
+                    <p class="text-gray-600">Geleneksel beton veya yekpare plastik depolara göre çok daha pratik ve hijyeniktir:</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <span><strong>Kapasite Artırımı:</strong> İhtiyaca göre paneller eklenerek hacim büyütülebilir.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <span><strong>Kolay Değişim:</strong> Hasar gören parçalar tüm depoyu değiştirmeden yenilenebilir.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                            <span><strong>Hızlı Teslimat:</strong> Fabrikasyon üretim sayesinde standart ve hatasız imalat.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="iletisim" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-extrabold mb-4">Bize Ulaşın & Teklif Alın</h2>
+                    <p class="text-gray-400 mb-8">İhtiyacınız olan depo ölçülerini veya kullanım amacınızı iletin, en uygun çözümü hemen fiyatlandıralım.</p>
+                    
+                    <div class="space-y-4 text-gray-300">
+                        <strong> Harun Aydın </strong>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-primary text-xl w-6"></i>
+                            <a href="tel:+905340388628" class="hover:text-primary transition duration-200">+90 534 038 86 28</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-primary text-xl w-6"></i>
+                            <a href="mailto:marmaramodulerdepo16gmail.com" class="hover:text-primary transition duration-200">marmaramodulerdepo16gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-primary text-xl w-6"></i>
+                            <span>Hamitler Mahallesi Hocalar Sokak no:52/A Osmangazi/Bursa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Mesajınız alındı!');">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">Ad Soyad / Firma Adı</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-primary">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-1">Telefon</label>
+                                <input type="tel" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-1">Depo Tipi</label>
+                                <select class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-primary">
+                                    <option>Paslanmaz Modüler Depo</option>
+                                    <option>Galvaniz Modüler Depo</option>
+                                    <option>GRP Kompozit Depo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">Mesajınız / İstenilen Kapasite (m³)</label>
+                            <textarea rows="3" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-sky-500 text-white font-bold py-3 rounded-lg transition duration-200">
+                            Teklif Talebini Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-6 text-center text-gray-500 text-sm border-t border-slate-800">
+        <p>&copy; 2026 Marmara Modüler Depo. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- Slider Script -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('opacity-0', 'pointer-events-none');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.remove('bg-white/40');
+                    dot.classList.add('bg-white', 'scale-110');
+                } else {
+                    dot.classList.remove('bg-white', 'scale-110');
+                    dot.classList.add('bg-white/40');
+                }
+            });
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = (currentSlide + 1) % totalSlides;
+            showSlide(next);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 4000);
+        }
+
+        let slideInterval = setInterval(nextSlide, 4000);
+    </script>
+
+</body>
+</html>
