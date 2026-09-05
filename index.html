@@ -377,6 +377,33 @@
 
         let slideInterval = setInterval(nextSlide, 4000);
     </script>
+    <!-- Mobil Menü Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Butona tıklandığında menüyü aç/kapat
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            
+            // İkonu 3 çizgi (bars) ile çarpı (xmark) arasında değiştir
+            if (menu.classList.contains('hidden')) {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        // Menüdeki bir linke tıklandığında menüyü otomatik kapat
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+    </script>
     
 </body>
 </html>
