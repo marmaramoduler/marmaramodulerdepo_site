@@ -412,6 +412,8 @@
     
         const form = event.target;
         const data = new FormData(form);
+        const musteriAdi = data.get("Ad_Soyad") || "İsimsiz";
+    data.append("_subject", "Yeni Teklif Talebi: " + musteriAdi);
     
         try {
             // 2. Verileri arka planda Formspree'ye gönder
