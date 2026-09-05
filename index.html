@@ -404,6 +404,37 @@
             });
         });
     </script>
+    <!-- form kayıt script -->
+        <script>
+    document.getElementById("iletisim-formu").addEventListener("submit", async function(event) {
+        // 1. Sayfanın Formspree'ye yönlenmesini durdur
+        event.preventDefault(); 
+    
+        const form = event.target;
+        const data = new FormData(form);
+    
+        try {
+            // 2. Verileri arka planda Formspree'ye gönder
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+    
+            // 3. Gönderim başarılıysa formu temizle ve uyarı ver
+            if (response.ok) {
+                alert("Mesajınız başarıyla alındı!");
+                form.reset(); 
+            } else {
+                alert("Mesaj gönderilirken bir sorun oluştu.");
+            }
+        } catch (error) {
+            alert("Bağlantı hatası oluştu. Lütfen internetinizi kontrol edin.");
+        }
+    });
+    </script>
     
 </body>
 </html>
