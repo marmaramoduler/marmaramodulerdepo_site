@@ -27,14 +27,17 @@
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
     <!-- Header / Navbar -->
+    <!-- Header / Navbar -->
     <header class="fixed w-full top-0 bg-white/95 backdrop-blur-md shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Eski Yazılı ve İkonlu Logo Bölümüne Geri Dönüldü -->
+            <!-- Düzeltilmiş Logo -->
             <a href="#" class="flex items-center gap-3">
                 <img src="https://i.hizliresim.com/oo653sun.jpg" alt="Marmara Modüler Depo Amblem" class="h-12 w-auto object-contain drop-shadow-sm">
-                <!-- Logo Metni -->
-                <span class="text-xl font-bold text-dark tracking-tight">MARMARA <span class="text-primary font-medium">MODÜLER SU DEPOLAMA</span><span class="text-xl font-bold text-dark tracking-tight"></span> SİSTEMLERİ</span></span>
+                <span class="text-xl font-bold text-dark tracking-tight hidden sm:block">MARMARA <span class="text-primary font-medium">MODÜLER SU DEPOLAMA</span> SİSTEMLERİ</span>
+                <!-- Mobilde çok uzun durmaması için logo yazısını kısaltabilir veya sadece amblemi tutabilirsin, şimdilik mobilde de görünecek şekilde bıraktım ancak sm:block ile istersen gizleyebilirsin -->
             </a>
+
+            <!-- Masaüstü Menü -->
             <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600">
                 <a href="#anasayfa" class="hover:text-primary transition">Ana Sayfa</a>
                 <a href="#hakkimizda" class="hover:text-primary transition">Hakkımızda</a>
@@ -42,7 +45,23 @@
                 <a href="#avantajlar" class="hover:text-primary transition">Neden Biz?</a>
                 <a href="#iletisim" class="bg-primary text-white px-5 py-2.5 rounded-lg shadow-sm hover:bg-sky-700 transition">Teklif Al</a>
             </nav>
+
+            <!-- Mobil Hamburger Butonu -->
+            <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-gray-600 hover:text-primary focus:outline-none transition-colors">
+                <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+            </button>
         </div>
+
+        <!-- Mobil Açılır Menü (Varsayılan olarak gizli) -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full left-0 top-20">
+            <div class="flex flex-col px-4 pt-2 pb-6 space-y-1">
+                <a href="#anasayfa" class="mobile-link block px-3 py-3 text-gray-600 font-medium border-b border-gray-50 hover:text-primary hover:bg-gray-50 rounded-lg transition">Ana Sayfa</a>
+                <a href="#hakkimizda" class="mobile-link block px-3 py-3 text-gray-600 font-medium border-b border-gray-50 hover:text-primary hover:bg-gray-50 rounded-lg transition">Hakkımızda</a>
+                <a href="#urunler" class="mobile-link block px-3 py-3 text-gray-600 font-medium border-b border-gray-50 hover:text-primary hover:bg-gray-50 rounded-lg transition">Ürünlerimiz</a>
+                <a href="#avantajlar" class="mobile-link block px-3 py-3 text-gray-600 font-medium border-b border-gray-50 hover:text-primary hover:bg-gray-50 rounded-lg transition">Neden Biz?</a>
+                <a href="#iletisim" class="mobile-link block mt-4 px-3 py-3 bg-primary text-white text-center rounded-lg font-medium hover:bg-sky-600 shadow-sm transition">Teklif Al</a>
+            </div>
+        </nav>
     </header>
     <main>
     <!-- Hero / Giriş Bölümü (Slider) -->
